@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ISDI Pasalabra</title>
+</head>
+<body>
+    <div class="inicio" id="inicio">
+        <div class="letrasInicio">
+            <span class="azul" >P</span>
+            <span class="verde">A</span>
+            <span class="rojo" >S</span>
+            <span class="azul" >A</span>
+            <span class="rojo" >P</span>
+            <span class="verde">A</span>
+            <span class="azul" >L</span>
+            <span class="verde">A</span>
+            <span class="rojo" >B</span>
+            <span class="azul" >R</span>
+            <span class="verde">A</span>
+        </div>
+        <h4 class="isdi"> ──▓ ISDI CODERS VERSION ▓── </h4>
+        <ul class="normas">
+            <li>Pasapalabra es un juego en el que deberás adivinar la palabra oculta tras una breve definición.</li>
+            <li>Hay un pregunta para cada letra del abedecedario. Dispones de 2 minutos y medio de tiempo</li>
+            <li>Debes escribir la palabra sin acentos, mayúculas o minúsculas no se tienen en cuenta. Posteriormente presionar 'responder' o la tecla 'ENTER'</li>
+            <li>En el caso de leer una pregunta y querer pasar a la siguiente sin responder, presiona 'pasapalabra' o la tecla 'ESC', el sistema guardará la pregunta para el final.</li>
+            <li>El juego acaba cuando se haya respondido todas las letras del abecedario o acabe el tiempo.</li>
+            <li>Al final del juego se mostrarán tus aciertos, tus fallos y el tiempo sobrante.</li>
+            <li>Se guardará tu puntuación en el ranking</li>
+            <li>Si no introduces ningún nombre de usuario, se te asignará por defecto "Invitad@"</li>
+        </ul>
+        <div class="botoneraInicio">
+            <a>Escribe tu nombre</a>
+            <input id="textoNombre" type="text"/>
+            <button id="botonJugar">JUGAR!</button>
+            <button id="botonHighScoreInicio">HIGH-SCORES</button>
+        </div>
+    </div>
+    <div class="juego" id="juego">
+        <div class="container">         <!-- Este div es para el contenedor de cámara y rosco-->
+            <div class="video"></div>   <!-- Este div es para el video de la cámara-->
+            <div class="letras">
+                <div class="a circle" id="A">A</div>
+                <div class="b circle" id="B">B</div>
+                <div class="c circle" id="C">C</div>
+                <div class="d circle" id="D">D</div>
+                <div class="e circle" id="E">E</div>
+                <div class="f circle" id="F">F</div>
+                <div class="g circle" id="G">G</div>
+                <div class="h circle" id="H">H</div>
+                <div class="i circle" id="I">I</div>
+                <div class="j circle" id="J">J</div>
+                <div class="k circle" id="K">K</div>
+                <div class="l circle" id="L">L</div>
+                <div class="m circle" id="M">M</div>
+                <div class="n circle" id="N">N</div>
+                <div class="ñ circle" id="Ñ">Ñ</div>
+                <div class="o circle" id="O">O</div>
+                <div class="p circle" id="P">P</div>
+                <div class="q circle" id="Q">Q</div>
+                <div class="r circle" id="R">R</div>
+                <div class="s circle" id="S">S</div>
+                <div class="t circle" id="T">T</div>
+                <div class="u circle" id="U">U</div>
+                <div class="v circle" id="V">V</div>
+                <div class="w circle" id="W">W</div>
+                <div class="x circle" id="X">X</div>
+                <div class="y circle" id="Y">Y</div>
+                <div class="z circle" id="Z">Z</div>
+            </div>
+        </div> <!-- final div para el contenedor de cámara y rosco-->
+        <div class="pregunta" id="pregunta">
+            <a> </a>
+        </div>
+        <div class="botonera">
+            <div class="solucion"><a id="solucion"></a></div>
+            <input id="textoRespuesta" type="text" />
+            <button id="botonRespuesta">Responder</button>
+            <button id="botonPasapalabra">Pasapalabra</button>
+        </div>
+        <div class="finPagina">
+            <a class="aciertos" id="aciertos">0</a>
+            <a class="contador" id="contador">150</a>       
+            <a class="fallos" id="fallos">0</a>
+        </div>
+        <div class="botoneraFinPartida" id="botoneraFinPartida">
+            <button id="botonVolverInicio">VOLVER A INICIO</button>
+            <button id="botonJugarDeNuevo">JUGAR DE NUEVO</button>
+            <button id="botonHighScoreJuego">VER HIGH-SCORES</button>
+        </div>
+    </div>
+    <div class="inicio" id="highScore">
+        <div class="letrasInicio">
+            <span class="azul" >P</span>
+            <span class="verde">A</span>
+            <span class="rojo" >S</span>
+            <span class="azul" >A</span>
+            <span class="rojo" >P</span>
+            <span class="verde">A</span>
+            <span class="azul" >L</span>
+            <span class="verde">A</span>
+            <span class="rojo" >B</span>
+            <span class="azul" >R</span>
+            <span class="verde">A</span>
+        </div>
+        <h4 class="isdi"> ──▓ RANKING JUGADORES ▓── </h4>
+        <ul class="rankingJugadores" id="rankingJugadores"></ul>
+        <div class="botoneraHighScore" id="botoneraHighScore">
+            <button id="botonVolverInicioHighScore">VOLVER A INICIO</button>
+            <!--<button id="botonJugarDeNuevoHighScore">JUGAR DE NUEVO</button>-->
+        </div>
+    </div>
+    <audio id="letsgo"><source src="letsgo.m4a" type="audio/mpeg"></audio>
+    <audio id="yes"><source src="yes.m4a" type="audio/mpeg"></audio>
+    <audio id="no"><source src="no.m4a" type="audio/mpeg"></audio>
+    <audio id="ended"><source src="ended.m4a" type="audio/mpeg"></audio>
+    <audio id="next"><source src="next.m4a" type="audio/mpeg"></audio>
+    <audio id="timeout"><source src="timeout.m4a" type="audio/mpeg"></audio>
+    <script src="index.js"></script>
+</body>
+</html>

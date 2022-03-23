@@ -1,0 +1,366 @@
+body{
+    margin: auto;
+    width: 640px; /*480px*/
+}
+/* CSS PANTALLA PRINCIPAL */
+
+.normas{
+    list-style: none;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.normas li{
+    padding-bottom: 12px;
+}
+.letrasInicio{
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+.verde{
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 2px black;
+}
+.azul{
+    background-color: rgb(81, 170, 221);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 2px black;
+}
+.rojo{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 2px black;
+}
+.isdi{
+    text-align: center;
+}
+.botoneraInicio{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CSS PANTALLA DE JUEGO */
+
+/* inicio camara CSS específico para cámara*/
+.container{
+    width: 640;
+}
+
+.video{
+    width: 640;
+}
+/* final camara */
+
+.letras{
+    margin-top: 375px;
+    text-align: center;
+}
+.circle{
+    position: absolute;
+    left: calc(50% - 12px);
+    top: 170px;
+    height: 25px;
+    width: 25px;
+    z-index: 90;
+}
+.a{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(263deg) translateX(150px) rotate(-263deg);
+    border: solid 2px black;
+}
+.b{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(277deg) translateX(150px) rotate(-277deg);
+    border: solid 2px black;
+}
+
+.c{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(290deg) translateX(150px) rotate(-290deg);
+    border: solid 2px black;
+}
+.d{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(303deg) translateX(150px) rotate(-303deg);
+    border: solid 2px black;
+}
+.e{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(316deg) translateX(150px) rotate(-316deg);
+    border: solid 2px black;
+}
+.f{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(331deg) translateX(150px) rotate(-331deg);
+    border: solid 2px black;
+}
+.g{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(346deg) translateX(150px) rotate(-346deg);
+    border: solid 2px black;
+}
+.h{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: translateX(150px);
+    border: solid 2px black;
+}
+.i{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(13deg) translateX(150px) rotate(-13deg);
+    border: solid 2px black;
+}
+.j{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(26deg) translateX(150px) rotate(-26deg);
+    border: solid 2px black;
+}
+.k{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(39deg) translateX(150px) rotate(-39deg);
+    border: solid 2px black;
+}
+.l{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(52deg) translateX(150px) rotate(-52deg);
+    border: solid 2px black;
+}
+.m{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(65deg) translateX(150px) rotate(-65deg);
+    border: solid 2px black;
+}
+.n{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(78deg) translateX(150px) rotate(-78deg);
+    border: solid 2px black;
+}
+.ñ{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(91deg) translateX(150px) rotate(-91deg);
+    border: solid 2px black;
+}
+.o{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(104deg) translateX(150px) rotate(-104deg);
+    border: solid 2px black;
+}
+.p{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(117deg) translateX(150px) rotate(-117deg);
+    border: solid 2px black;
+}
+.q{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(130deg) translateX(150px) rotate(-130deg);
+    border: solid 2px black;
+}
+.r{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(143deg) translateX(150px) rotate(-143deg);
+    border: solid 2px black;
+}
+.s{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(156deg) translateX(150px) rotate(-156deg);
+    border: solid 2px black;
+}
+.t{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(169deg) translateX(150px) rotate(-169deg);
+    border: solid 2px black;
+}
+.u{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(182deg) translateX(150px) rotate(-182deg);
+    border: solid 2px black;
+}
+.v{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(195deg) translateX(150px) rotate(-195deg);
+    border: solid 2px black;
+}
+.w{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(208deg) translateX(150px) rotate(-208deg);
+    border: solid 2px black;
+}
+.x{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(221deg) translateX(150px) rotate(-221deg);
+    border: solid 2px black;
+}
+.y{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(235deg) translateX(150px) rotate(-235deg);
+    border: solid 2px black;
+}
+.z{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(81, 170, 221);
+    border-radius: 50%;
+    transform: rotate(249deg) translateX(150px) rotate(-249deg);
+    border: solid 2px black;
+}
+
+.pregunta{
+
+    min-height: 50px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.solucion{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.botonera{
+    margin: 8px;
+    padding: 8px;
+    text-align: center;
+}
+.finPagina{
+    text-align: center;
+}
+.aciertos{
+    margin: 8px;
+    padding: 8px;
+    font-weight: 500;
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 2px black;
+}
+
+.fallos{
+    margin: 8px;
+    padding: 8px;
+    font-weight: 500;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 2px black;
+}
+.contador{
+    text-align: center;
+    min-width: 30px;
+    height: 35px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.botoneraFinPartida{
+    text-align: center;
+}
+
+.botoneraHighScore{
+    text-align: center;
+}
+
+.rankingJugadores{
+    list-style: none;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.jugadores{
+    text-align: center;
+    padding-bottom: 8px;
+}
