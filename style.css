@@ -1,6 +1,5 @@
 body{
     margin: auto;
-    width: 640px; /*480px*/
 }
 /* CSS PANTALLA PRINCIPAL */
 
@@ -53,27 +52,19 @@ body{
 
 /* CSS PANTALLA DE JUEGO */
 
-/* inicio camara CSS específico para cámara*/
-.container{
-    width: 640;
-}
-
-.video{
-    width: 640;
-}
-/* final camara */
-
 .letras{
+    display: flex;
+    justify-content: center;  
     margin-top: 375px;
-    text-align: center;
 }
 .circle{
     position: absolute;
-    left: calc(50% - 12px);
     top: 170px;
-    height: 25px;
-    width: 25px;
-    z-index: 90;
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .a{
     height: 25px;
@@ -294,8 +285,7 @@ body{
 }
 
 .pregunta{
-
-    min-height: 50px;
+    min-height: 60px;
     margin: 8px;
     padding: 8px;
     border-radius: 5px;
@@ -338,7 +328,7 @@ body{
 }
 .contador{
     text-align: center;
-    min-width: 30px;
+    min-width: 50px;
     height: 35px;
     margin: 8px;
     padding: 8px;
